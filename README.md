@@ -17,8 +17,8 @@ A Model Control Protocol (MCP) server implementation for ElevenLabs' Scribe spee
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/aromanstatue/elevenlabs-scribe-mcp-server.git
-cd elevenlabs-scribe-mcp-server
+git clone https://github.com/aromanstatue/MCP-Elevenlab-Scribe-ASR.git
+cd MCP-Elevenlab-Scribe-ASR
 ```
 
 2. Create and activate a virtual environment:
