@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "elevenlabs-scribe-mcp-server"
+version = "0.1.0"
+description = "MCP server for ElevenLabs Scribe (speech-to-text) API"
+requires-python = ">=3.8"
+dependencies = [
+    "fastapi>=0.68.0",
+    "uvicorn>=0.15.0",
+    "python-multipart>=0.0.5",
+    "requests>=2.26.0",
+    "python-dotenv>=0.19.0",
+    "websockets>=10.0",
+    "aiohttp>=3.8.0",
+    "PyAudio>=0.2.11",
+    "numpy>=1.21.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-asyncio>=0.15.0",
+    "black>=21.0",
+    "isort>=5.0",
+]
+
+[tool.black]
+line-length = 100
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+line_length = 100
